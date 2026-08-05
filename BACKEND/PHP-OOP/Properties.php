@@ -2,17 +2,18 @@
 
 require_once "Data/Person.php";
 
-$person = new Person();
-$person->name = "Nyomon";
+$person = new Person("Wahyu", "Bali");
+$person->name = "Wahyu";
 $person->address = "Bali";
 
 var_dump($person);
 
+// menambahkan properties dalam object baru
 echo "Name : $person->name" . PHP_EOL;
 echo "Address : $person->address" . PHP_EOL;
 echo "Country : $person->country" . PHP_EOL;
 
-$person2 = new Person();
+$person2 = new Person("Adiguna", "Makassar");
 $person2->name = "Adiguna";
 $person2->address = "Makassar";
 
