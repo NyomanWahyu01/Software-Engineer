@@ -5,10 +5,16 @@ class Manager
     
     function sayHello(string $name): void
     {
-        echo "hi $name, my name is $$this->name" . PHP_EOL;
+        echo "hi $name, my name is Manager $$this->name" . PHP_EOL;
     }
 }
 
-class VicePresident extends Manager{
+
+class VicePresident extends Manager
+{
+     function sayHello(string $name): void
+    {
+        echo "hi $name, my name is VP $$this->name" . PHP_EOL;  //Fucntion Overriding
+    }
 
 }
